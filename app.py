@@ -11,11 +11,11 @@ st.title("🚗 Análisis Exploratorio de Vehículos - Dr. D")
 # Carga de datos
 @st.cache_data 
 def load_data():
-    return pd.read_csv("/data/vehicles_us.csv")
+    return pd.read_csv("data/vehicles_us.csv")
 
 df = load_data()
 
-# Sidebar con controles
+# Sidebar con controless                  
 st.sidebar.header("🔧 Controles de Visualización")
 chart_type = st.sidebar.radio(
     "Elige el tipo de gráfico:",
