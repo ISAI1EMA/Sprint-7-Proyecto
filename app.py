@@ -11,7 +11,7 @@ st.title("🚗 Análisis Exploratorio de Vehículos - Dr. D")
 # Carga de datos
 @st.cache_data 
 def load_data():
-    return pd.read_csv("/workspaces/Sprint-7-Proyecto/data/vehicles_us.csv")
+    return pd.read_csv("/data/vehicles_us.csv")
 
 df = load_data()
 
